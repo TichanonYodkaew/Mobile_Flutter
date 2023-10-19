@@ -81,20 +81,20 @@ const LECTURERS = [
   'Wichit Sombat',
 ];
 
-const Image = [
-    'assets/banner1.jpg',
-    'assets/banner2.jpg',
-    'assets/banner3.jpg',
-    'assets/banner4.jpg',
-    'assets/banner5.jpg',
-    'assets/banner6.jpg',
-    'assets/banner7.jpg',
-    'assets/banner8.jpg',
-    'assets/banner9.jpg',
-    'assets/banner10.jpg',
-    'assets/banner11.jpg',
-    'assets/banner12.jpg',
-];
+// const Banner = [
+//     'assets/banner1.jpg',
+//     'assets/banner2.jpg',
+//     'assets/banner3.jpg',
+//     'assets/banner4.jpg',
+//     'assets/banner5.jpg',
+//     'assets/banner6.jpg',
+//     'assets/banner7.jpg',
+//     'assets/banner8.jpg',
+//     'assets/banner9.jpg',
+//     'assets/banner10.jpg',
+//     'assets/banner11.jpg',
+//     'assets/banner12.jpg',
+// ];
 
 var random = Random();
 
@@ -103,6 +103,6 @@ List<dynamic> randomCourse() {
   List<dynamic> course = [];
   course.addAll(COURSES[random.nextInt(COURSES.length)]);
   course.add(LECTURERS[random.nextInt(LECTURERS.length)]);
-  course.add(Image[random.nextInt(Image.length)]);
+  // course.add(Banner[random.nextInt(Banner.length)]);
   return course;
 }
